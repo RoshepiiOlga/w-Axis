@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>w-Axis</title>
+    <link rel="stylesheet" href="stylesheet/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cassa</h1>
+      <div class="components">
+        <div class="production" id="pineapple">
+          <h2 name="Pine Apple">Pine Apple</h2>
+          <img class="image-productions" src="images/pineapple.gif">
+         <!--  <div class="product-range"> -->
+            <img class="product-range" src="images/shelf.gif">
+          <!-- </div> -->
+          <div class="description">
+            <div class="description-text">
+              <h3>oferta limitata -50%</h3>
+              <div class="cena">
+                <p id="prise-product">$8.50</p>
+                <h3>19.00$</h3>
+              </div>
+              <div class="purchase">
+                <div class="select number">
+                  <a href="javascript:void(0);" class="slct"></a>
+                  <ul class="drop" id="selectId"></ul>
+                  <input type="hidden" id="select" />
+                </div>
+                <button class="basket" type="submite">
+                  <i class="material-icons">shopping_cart</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="production" id="berries">
+          <h2 name="Berries">Berries</h2>
+          <img class="image-productions" src="images/berries.gif">
+         <!--  <div class="product-range"> -->
+            <img class="product-range" src="images/shelf.gif">
+          <!-- </div> -->
+          <div class="description">
+            <div class="description-text">
+              <h3>oferta limitata -50%</h3>
+              <div class="cena">
+                <p id="prise-product">$8.50</p>
+                <h3>19.00$</h3>
+              </div>
+              <div class="purchase">
+                <div class="select number">
+                  <a href="javascript:void(0);" class="slct"></a>
+                  <ul class="drop" id="selectId"></ul>
+                  <input type="hidden" id="select"/>
+                </div>
+                <button class="basket" type="submite">
+                  <i class="material-icons">shopping_cart</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="production" id="grapefruit">
+          <h2 name="Grapefruit">Grapefruit</h2>
+          <img class="image-productions" src="images/grapefruit.gif">
+          <!-- <div class="product-range"> -->
+            <img class="product-range" src="images/shelf.gif">
+          <!-- </div> -->
+          <div class="description">
+            <div class="description-text">
+              <h3>oferta limitata -50%</h3>
+              <div class="cena">
+                <p id="prise-product">$8.50</p>
+                <h3>19.00$</h3>
+              </div>
+              <div class="purchase">
+                <div class="select number">
+                  <a href="javascript:void(0);" class="slct"></a>
+                  <ul class="drop" id="selectId"></ul>
+                  <input type="hidden" id="select"/>
+                </div>
+                <button class="basket" type="submite">
+                  <i class="material-icons">shopping_cart</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="production" id="apple">
+          <h2 name="Apple">Apple</h2>
+          <img class="image-productions" src="images/apple.gif">
+          <!-- <div class="product-range"> -->
+            <img class="product-range" src="images/shelf.gif">
+          <!-- </div> -->
+          <div class="description">
+            <div class="description-text">
+              <h3>oferta limitata -50%</h3>
+              <div class="cena">
+                <p id="prise-product">$8.50</p>
+                <h3>19.00$</h3>
+              </div>
+              <div class="purchase">
+                <div class="select number">
+                  <a href="javascript:void(0);" class="slct"></a>
+                  <ul class="drop" id="selectId"></ul>
+                  <input type="hidden" id="select" />
+                </div>
+                <button class="basket" type="submite">
+                  <i class="material-icons">shopping_cart</i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--     <div class="right-menu" id="right-menu">
+      <div class="header" id="right-menu-header">
+        <i class="material-icons icon-right-menu">keyboard_arrow_right</i>
+        <h1>Carello</h1>
+      </div>
+      <div class="order">
+        <div class="order-form"></div>
+        <div class="order-summ">
+          <div class="sum">
+            <h3>SUBTOTALE</h3>
+            <p class="text-sum"></p>
+          </div>
+          <div class="right-menu-footer">
+            <button class="right-menu-button">VISUALIZZA CARRELLO</button>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+    <div class="form-container" style="display: none;">
+      <form>
+        <div class="image-form">
+          <img src="">
+        </div>
+        <div class="text-form">
+          <p>OFFERTA</p>
+          <p>FIZZYSLIM CON SAPORE DI</p>
+          <p class="name-text"></p>
+          <div class="style-form">
+            <h3>QTA:</h3>
+            <button class="qta-button" type="submit" id="add">
+              <i class="material-icons">add</i>
+            </button>
+            <input type="text" class="qta-number" value=""></input>
+            <button class="qta-button" type="submit" id="remove">
+              <i class="material-icons">remove</i>
+            </button>
+          </div>
+          <div class="style-form">
+            <i class="material-icons">euro</i>
+            <p class="sum-select"></p>
+          </div>
+        </div>
+        <span class="close">&times;</span>
+        <!-- <div>
+          <button type="submit" id="close" class="close">
+            <i class="material-icons">clear</i>
+          </button>
+        </div> -->
+      </form>
+     </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="header" id="right-menu-header">
+      <i class="material-icons icon-right-menu">keyboard_arrow_right</i>
+      <h1>Carello</h1>
+    </div>
+    <div class="order">
+      <div class="order-form"></div>
+      <div class="order-summ">
+        <div class="sum">
+          <h3>SUBTOTALE</h3>
+          <p class="text-sum"></p>
+        </div>
+        <div class="right-menu-footer">
+          <button class="right-menu-button">VISUALIZZA CARRELLO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript" src="javascript/index.js"></script>
+     <script type="text/javascript" src="javascript/zakaz.js"></script>
+  </body>
+</html>
